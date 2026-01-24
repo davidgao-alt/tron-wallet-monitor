@@ -88,8 +88,8 @@ ${new Date().toLocaleString()}
 // });
 
 
-// const TG_BOT_TOKEN = "8543613686:AAFwY-7h5o2XrvytL91r0_As62PSKiGPNa8";
-// const TG_CHAT_ID = "-4656475555";
+// const TG_BOT_TOKEN = "";
+// const TG_CHAT_ID = "";
 
 
 // function sunToTRX(n: number) {
@@ -106,7 +106,7 @@ ${new Date().toLocaleString()}
 // }
 
 // (async () => {
-//   const address = "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N";
+//   const address = "";
 //   const acc: any = await tronWeb.trx.getAccount(address);
 
 //   // Available

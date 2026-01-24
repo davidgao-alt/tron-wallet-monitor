@@ -81,9 +81,9 @@ setInterval(poll, INTERVAL);
 
 // const tronWeb = new TronWeb({ fullHost: "https://api.trongrid.io" });
 
-// const WATCH_ADDRESS = "TEySEZLJf6rs2mCujGpDEsgoMVWKLAk9mT";
-// const TG_BOT_TOKEN = "8543613686:AAFwY-7h5o2XrvytL91r0_As62PSKiGPNa8";
-// const TG_CHAT_ID = "-4656475555";
+// const WATCH_ADDRESS = "";
+// const TG_BOT_TOKEN = "";
+// const TG_CHAT_ID = "";
 
 // const seen = new Set<string>();
 // const INTERVAL = 4000;
