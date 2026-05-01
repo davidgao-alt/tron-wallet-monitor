@@ -6,9 +6,13 @@ import { TronWeb } from "tronweb";
 
 const tronWeb = new TronWeb({ fullHost: "https://api.trongrid.io" });
 
-const WATCH_ADDRESS = "";
-const TG_BOT_TOKEN = "";
-const TG_CHAT_ID = "";
+// const WATCH_ADDRESS = "THM28kapdZqMkJjEVWxViu8MhjrdyuJqBz";
+// const TG_BOT_TOKEN = "7624574350:AAFQTF-tIW9IREdx-zoUfLYX-VRfjB2aBZY";
+// const TG_CHAT_ID = "-5225818932";
+
+const WATCH_ADDRESS = "TEySEZLJf6rs2mCujGpDEsgoMVWKLAk9mT";
+const TG_BOT_TOKEN = "8543613686:AAFwY-7h5o2XrvytL91r0_As62PSKiGPNa8";
+const TG_CHAT_ID = "-1003712720647";
 
 const seen = new Set<string>();
 const INTERVAL = 4000;
@@ -44,18 +48,25 @@ function sunToTRXFull(n: number) {
   return (n / 1_000_000).toFixed(6);
 }
 
+// function formatLocalTime(ts: number) {
+//   const d = new Date(ts);
+
+//   const yyyy = d.getFullYear();
+//   const mm = String(d.getMonth() + 1).padStart(2, "0");
+//   const dd = String(d.getDate()).padStart(2, "0");
+
+//   const hh = String(d.getHours()).padStart(2, "0");
+//   const min = String(d.getMinutes()).padStart(2, "0");
+//   const ss = String(d.getSeconds()).padStart(2, "0");
+
+//   return `${yyyy}-${mm}-${dd} ${hh}:${min}:${ss} (UTC)`;
+// }
+
 function formatLocalTime(ts: number) {
-  const d = new Date(ts);
-
-  const yyyy = d.getFullYear();
-  const mm = String(d.getMonth() + 1).padStart(2, "0");
-  const dd = String(d.getDate()).padStart(2, "0");
-
-  const hh = String(d.getHours()).padStart(2, "0");
-  const min = String(d.getMinutes()).padStart(2, "0");
-  const ss = String(d.getSeconds()).padStart(2, "0");
-
-  return `${yyyy}-${mm}-${dd} ${hh}:${min}:${ss} (UTC)`;
+  return new Date(ts).toLocaleString("en-GB", {
+    timeZone: "Asia/Hong_Kong",
+    hour12: false
+  }) + " (HKT)";
 }
 
 async function fetchTxs() {
