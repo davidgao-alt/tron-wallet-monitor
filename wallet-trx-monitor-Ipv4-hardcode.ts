@@ -6,13 +6,10 @@ import { TronWeb } from "tronweb";
 
 const tronWeb = new TronWeb({ fullHost: "https://api.trongrid.io" });
 
-// const WATCH_ADDRESS = "THM28kapdZqMkJjEVWxViu8MhjrdyuJqBz";
-// const TG_BOT_TOKEN = "7624574350:AAFQTF-tIW9IREdx-zoUfLYX-VRfjB2aBZY";
-// const TG_CHAT_ID = "-5225818932";
 
-const WATCH_ADDRESS = "TEySEZLJf6rs2mCujGpDEsgoMVWKLAk9mT";
-const TG_BOT_TOKEN = "8543613686:AAFwY-7h5o2XrvytL91r0_As62PSKiGPNa8";
-const TG_CHAT_ID = "-1003712720647";
+const WATCH_ADDRESS = "";
+const TG_BOT_TOKEN = "";
+const TG_CHAT_ID = "";
 
 const seen = new Set<string>();
 const INTERVAL = 4000;
